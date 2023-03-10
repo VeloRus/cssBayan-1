@@ -3,3 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.wrapper  {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.mems {
+  width: 100%;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mem1 {  
+  background-image: url("img/number_1.jpg");
+}
+
+.mem2 {
+  background-image: url("img/number_2.jpg");
+}
+
+.mem3 {
+  background-image: url("img/number_3.jpg");
+}
+
+.mem4 {
+  background-image: url("img/number_4.jpg");
+}
+
+.mem5 {
+  background-image: url("img/number_5.jpg");
+}
