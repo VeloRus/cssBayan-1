@@ -1,17 +1,20 @@
 html {
   overflow-x: hidden;
-  пше margin-right: calc(-1 * (100vw - 100%));
+  margin-right: calc(-1 * (100vw - 100%));
+  background-color: #15170e;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: .5s ease;
+
 }
 
 .wrapper  {
   width: 50vw;
-  background-color: #395725;
+  background-color: #374030;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -21,8 +24,8 @@ html {
 }
 
 .title {
-  font-size: 1.4em;
-  color: azure;
+  font-size: 1.8em;
+  color: #ffffff;
   padding: 1%;
 }
 
@@ -34,38 +37,63 @@ html {
   width: 0;
   height: 0;
   opacity: 0;
-  animation: ani 2.5s forwards;
 }
 
 input:checked ~ .picture {
   width: 40vh;
   height: auto;
   display: block;
-  animation: ani 2.5s forwards;
-  opacity: 1;
   padding: 1%;
   margin: 0 auto;
+  opacity: 1;
 } 
 
 .arrow {
-  width: 3%;
+  width: 5%;
   height: auto;
+  opacity: 0;
+ 
 }
 
+.wrapper:hover .arrow {
+  display: inline-block;
+  opacity: 1;
+}
+
+.mem_title {
+  font-size: 1.6em;
+}
+
+.mem_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  color: #fdc314;
+}
+
+.wrapper:hover .mem_title {
+  color: #ffffff;
+  transition: .5s;
+}
+
+.wrapper:hover .title {
+  color: #fdc314;
+  transition: .5s;
+}
 
 label:hover .picture  {
   width: 40vh;
   height: auto;
   display: block;
-  transition: all .5s;
+  opacity: 1;
+  transition: 1s;
   padding: 1%;
   margin: 0 auto;
-  animation: ani 2.5s forwards;
-  opacity: 1;
-} 
+}
 
 .label:hover .arrow {
-  transition: .5s;
+  transition: 0s;
   transform: rotate(45deg);
 }
 
@@ -77,21 +105,7 @@ input {
   display: none;
 }
 
-.mem_title {
-  font-size: 1.2em;
-}
 
-.mem_header {
-  display: flex;
-  justify-content: space-between;
-  color: azure;
-  padding: 1%;
-  background-color: #0a380c;
-}
-
-.arrow-active {
-  transform: rotate(180deg);
-}
 
 .mem1 {  
   background-image: url("img/number_1.jpg");
