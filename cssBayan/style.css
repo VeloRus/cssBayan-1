@@ -13,7 +13,7 @@ html {
 }
 
 .wrapper  {
-  width: 50vw;
+  width: 40%;
   background-color: #374030;
   margin: 0 auto;
   display: flex;
@@ -24,7 +24,7 @@ html {
 }
 
 .title {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   color: #ffffff;
   padding: 1%;
 }
@@ -40,7 +40,7 @@ html {
 }
 
 input:checked ~ .picture {
-  width: 40vh;
+  width: 50vh;
   height: auto;
   display: block;
   padding: 1%;
@@ -61,7 +61,7 @@ input:checked ~ .picture {
 }
 
 .mem_title {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .mem_header {
@@ -83,7 +83,7 @@ input:checked ~ .picture {
 }
 
 label:hover .picture  {
-  width: 40vh;
+  width: 50vh;
   height: auto;
   display: block;
   opacity: 1;
@@ -130,3 +130,60 @@ input {
 
 
 
+
+
+
+
+
+
+
+@media (min-width: 569px) and (max-width: 1079px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .mem_title {
+    font-size: 1.6rem;
+  }
+
+  .label:hover .picture  {
+    width: 70%;;
+  }
+
+  input:checked ~ .picture {
+    width: 70%;;
+  }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 568px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .mem_title {
+    font-size: 1rem;
+  }
+
+  .label:hover .picture  {
+    width: 70%;;
+  }
+
+  input:checked ~ .picture {
+    width: 70%;;
+  }
+}
