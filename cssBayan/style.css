@@ -12,13 +12,13 @@ html {
 }
 
 .wrapper  {
+  cursor: pointer;
   width: 40%;
   background-color: #374030;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
   font-size: 1em;
 }
 
@@ -91,13 +91,13 @@ label:hover .picture  {
   margin: 0 auto;
 }
 
+.label {
+  cursor: pointer;
+}
+
 .label:hover .arrow {
   transition: 0s;
   transform: rotate(45deg);
-}
-
-.label {
-  cursor: pointer;
 }
 
 input {
@@ -123,6 +123,8 @@ input {
 .mem5 {
   background-image: url("img/number_5.jpg");
 }
+
+
 
 
 
